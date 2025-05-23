@@ -1,12 +1,83 @@
-# React + Vite
+# PopX React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, responsive React application for user account management with **Home**, **Login**, **Register**, **Account Setting**, and **404 Not Found** pages. Built with React, React Router, Tailwind CSS, and React Icons.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Project Overview](#project-overview)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Installation](#installation)  
+- [Available Scripts](#available-scripts)  
+- [Folder Structure](#folder-structure)  
+- [Component Details](#component-details)  
+- [Contributing](#contributing)  
+- [License](#license)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Project Overview
+
+PopX is a simple user-facing React app that allows users to:
+
+- Register for an account
+- Login securely
+- Manage account settings
+- Navigate between pages
+- See a custom 404 page for undefined routes
+
+The UI is designed with Tailwind CSS for responsiveness and a modern look consistent across all pages.
+
+---
+
+## Features
+
+- **Home Page:** Welcomes users with options to register or login.
+- **Register Page:** Allows new users to create an account with validation.
+- **Login Page:** Secure login with validation and conditional button styles.
+- **Account Setting Page:** Displays user profile info with editable avatar placeholder.
+- **404 Page:** Custom “Page Not Found” message with navigation back to home.
+- Fully **responsive** across different screen sizes using Tailwind CSS.
+- Consistent theme using violet and slate color palette.
+
+---
+
+## Tech Stack
+
+- React 18+  
+- React Router DOM v6+  
+- Tailwind CSS  
+- React Icons (IoCamera, FaSadTear)  
+- JavaScript (ES6+)  
+- CSS (via Tailwind utility classes)
+
+---
+
+## Installation
+
+1. Clone the repo:
+
+   ```bash
+   git clone https://github.com/yourusername/popx-react-app.git
+   cd popx-react-app
+
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+
+npm start
+# or
+yarn start
+
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+
+
+
