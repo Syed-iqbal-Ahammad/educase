@@ -1,9 +1,13 @@
-import React from 'react'
+import { BrowserRouter } from "react-router";
+import RouteLayout from "./Routes/RouteLayout";
 const App = () => {
+
   return (
-    <div className='bg-gray-900 text-white h-screen flex items-center justify-center'>
-      hai
-    </div>
+    <>
+      <BrowserRouter>
+        <RouteLayout />
+      </BrowserRouter>
+    </>
   )
 }
 
