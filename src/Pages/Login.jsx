@@ -1,16 +1,16 @@
 import { useState } from "react"
-
+import { useDispatch } from 'react-redux'
+import { setEmail } from "../features/Email/EmailSlice"
+import { useNavigate } from "react-router"
 const Login = () => {
   const [email, setemail] = useState("")
   const [password, setpassword] = useState("")
-
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const HandleSubmit = (e) => {
     e.preventDefault()
-    const data = {
-      email: email,
-      password: password
-    }
-    console.log(data)
+    dispatch(setEmail(email))
+    navigate("/setting")
   }
 
   return (
@@ -66,10 +66,9 @@ const Login = () => {
                 </div>
               </div>
               <button
-                className={`cursor-pointer font-bold bg-gray-400 p-1 text-white ${
-                  email.length >= 4 && password.length >= 8 &&
+                className={`cursor-pointer font-bold bg-gray-400 p-1 text-white ${email.length >= 4 && password.length >= 8 &&
                   'bg-violet-600 hover:bg-violet-700 text-slate-200 hover:text-slate-300'
-                } rounded-lg w-full`}
+                  } rounded-lg w-full`}
                 type="submit"
               >
                 Login
